@@ -2,6 +2,7 @@
 
 export class App {
   constructor({ element }) {
+  	this._el = element;
    this._render();
   }
 
