@@ -2,7 +2,7 @@
 
 export class App {
   constructor({ element }) {
-   
+   this._render();
   }
 
  
