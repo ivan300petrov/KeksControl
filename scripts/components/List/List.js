@@ -1,15 +1,9 @@
-
-
-export class App  extends Component{
+export class List  extends Component{
   constructor({ element }) {
-    super();
+  	super();
   	this._el = element;
    this._render();
   }
-
- 
-  
-
   _render() {
     this._el.innerHTML = `
     <input type="button" name="tabel", value="табель">
