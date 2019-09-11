@@ -1,8 +1,8 @@
 
 
-export class App  extends Component{
+export class App  {
   constructor({ element }) {
-    super();
+    
   	this._el = element;
    this._render();
   }
