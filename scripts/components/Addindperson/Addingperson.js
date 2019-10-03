@@ -1,10 +1,13 @@
-export class addingPerson extends Component{
+//import { Component } from '../Component/Component.js';
+export class AddingPerson {
+/*/*
 	constructor({element}){
-		super();
+		//super();
 		this._el = element;
 
 
-    this._render();
+     this._render();
+    /*
     this._el.addEventListener('keydown', e => {
       if (!(e.target.closest('#name') || e.target.closest('#fam'))) return;
 
@@ -13,32 +16,21 @@ export class addingPerson extends Component{
      //   e.preventDefault();
      // }
 
-    })
+    });
+    */
+/*
 this._el.addEventListener('click', e => {
       e.preventDefault();
 
-      if (e.target.closest('[data-action=cancel]')) {
-        this.close();
-      }
-
-      if (e.target.closest('[data-action=buy]')) {
-        let addEvent = new CustomEvent('add', {
-          detail: {
-            name: this._currentItem,
-            fam: +this._el.querySelector('#amount').value,
-          }
-        })
-        this._el.dispatchEvent(addEvent);
-        this.close();
-      }
-    })
+      if (e.target.closest('[data-action=cancel]')) this.close();
+})
 	}
+*/
 close() {
     this._el.querySelector('.modal').classList.remove('open');
   }
-  _add(name, fam) {
-
-  }
+  
+  /*
 	_render(){
 		this._el.innerHTML = `
 <div id='modal' class='modal open'>
@@ -56,4 +48,5 @@ close() {
 </div>
 		`;
 	}
+	*/
 }

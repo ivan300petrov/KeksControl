@@ -1,3 +1,3 @@
-export { Portfolio } from './Portfolio/Portfolio.js';
-export { Table } from './Table/Table.js';
-export { TradeWidget } from './TradeWidget/TradeWidget.js';
+export { AddingPerson } from './Adding_person/Adding_person.js';
+export { Tabel } from './Tabel/Tabel.js';
+export { Add } from './Add/Add.js';
