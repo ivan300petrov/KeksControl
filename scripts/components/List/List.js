@@ -74,11 +74,13 @@ this.persons = JSON.parse(localStorage.getItem('persons'));
   let  lastName = this._el.querySelector('#last_name').value;
    let password = this._el.querySelector('#password').value;
      let email =  this._el.querySelector('#email').value;
+
 this.persons[Object.keys(this.persons).length + 1] = {
       firstName: firstName,
       lastName: lastName,
       password: password,
-      email: email}
+      email: email,
+    }
   localStorage.setItem(`persons`, JSON.stringify(this.persons));
     //console.log(localStorage);
       //console.log(localStorage[password]);
@@ -154,7 +156,7 @@ this._render()
       
     <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Добавить</a>
      <a href="#!" data-action="clear" class="modal-close waves-effect waves-green btn">Очистить</a>
-
+<a href="#!" data-action="edit_item" class="modal-close waves-effect waves-green btn">pedakt его</a>
      <a href="#!" data-action="clear_item" class="modal-close waves-effect waves-green btn">Удалить его</a>
         <div id="modal" data-element="adding"></div>  
     <div id="modal2" class="modal">

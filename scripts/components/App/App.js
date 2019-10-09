@@ -1,9 +1,9 @@
 import { Tabel } from '../Tabel/Tabel.js';
 import { List } from '../List/List.js';
-
+import { Calc } from '../Calc/Calc.js';
 export class App  {
   constructor({ element }) {
-    
+   
   	this._el = element;
    
    this._render();
@@ -20,7 +20,9 @@ export class App  {
         this._initList();
       }
 
-
+ if (e.target.closest('[data-action=calc]')) {
+        this._initCalc();
+      }
 //кастомное событие
 /*
       if (e.target.closest('[data-action=tabel]')) {
@@ -37,11 +39,19 @@ export class App  {
     
   }
 
- 
+ _initCalc(){
+  this._calc = new Calc({
+      //data: this._data,
+      
+      element: this._el.querySelector('[data-element=tabel]'),
+    });
+ }
   
 _initTabel() {
-    this._table = new Tabel({
+  //alert('efwef');
+    this._tabel = new Tabel({
       //data: this._data,
+      
       element: this._el.querySelector('[data-element=tabel]'),
     });
   }
